@@ -1,0 +1,21 @@
+﻿@model SigninViewModel
+
+<h1>Signin</h1>
+@if (!String.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+<form asp-action="Signin">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input asp-for="Email" type="email" class="form-control" id="email" required />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input asp-for="Password" type="password" class="form-control" id="password" required />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Sign in" class="btn btn-primary" />
+    </div>
+
+</form>

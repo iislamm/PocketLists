@@ -1,0 +1,43 @@
+﻿@model PocketLists.Models.HomeViewModel
+
+<header class="">
+        <h1 class="display-4">Tasks - @ViewData["username"] </h1>
+</header>
+<section>
+    <ul class="no-padding">
+        @foreach (var task in Model.Tasks)
+        {
+            <li class="row list-item">
+                <a class="col text-black-50" asp-action="CheckTask" asp-route-id="@task.TaskID">
+
+                    @if (task.Done == 1)
+                    {
+                        <i class="material-icons">
+                            check_box
+                        </i>
+                    }
+                    else
+                    {
+                        <i class="material-icons">
+                            check_box_outline_blank
+                        </i>
+                    }
+                </a>
+                <p class="col-10 no-margin">@Html.DisplayFor(taskItem => task.TaskTitle)</p>
+                <form class="col text-right" asp-action="Delete">
+                    <input type="hidden" asp-for="@task.TaskID" name="id" />
+                    <button type="submit" class="no-btn" title="Delete @task.TaskTitle">
+                        <i class="material-icons">delete</i>
+                    </button>
+                </form>
+            </li>
+        }
+    </ul>
+</section>
+<section>
+    <form asp-action="CreateTask">
+        <div class="form-group">
+            <input type="text" class="form-control" asp-for="NewTask.TaskTitle" name="taskTitle" placeholder="Add a new task..." autocomplete="off" />
+        </div>
+    </form>
+</section>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocketLists", "PocketLists\PocketLists.csproj", "{04B9D88D-E2BA-485C-800D-4FC3D1CDA96B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04B9D88D-E2BA-485C-800D-4FC3D1CDA96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B9D88D-E2BA-485C-800D-4FC3D1CDA96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B9D88D-E2BA-485C-800D-4FC3D1CDA96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B9D88D-E2BA-485C-800D-4FC3D1CDA96B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACA26AAA-40C6-4E3B-B4BE-7F88699C4A3B}
+	EndGlobalSection
+EndGlobal
